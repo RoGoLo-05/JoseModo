@@ -52,6 +52,7 @@ section{
 }
 
 section h2{
+    font-size: 2vw;
     border-bottom: solid 2px green;
     padding-bottom: 0.5vw;
     margin-right: 2vw;
@@ -65,7 +66,7 @@ section h2{
     grid-template-areas:
     "parrafos"
     "imagen";
-    gap: 0vh;
+    gap: 1vw;
     max-width: 100vw;
 }
 
@@ -90,7 +91,7 @@ section h2{
         grid-template-columns: 2fr; /*Como solo hay una columna, pongo 1fr. Si hubieran dos podría poner: 1fr 1fr por ejemplo*/
         grid-template-areas:
         "parrafos imagen";
-        gap: 1vw;
+        gap: 5vw;
         max-width: 100vw;
     }
 
