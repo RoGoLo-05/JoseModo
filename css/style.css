@@ -1,8 +1,11 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    background-color: darkslategray;
 }
 
+
+/*header*/
 header{
     background-color: limegreen;
     display: flex;
@@ -11,8 +14,45 @@ header{
 
 header h1{
     font-size: 3vw;
+    padding-top: 1vw;
 }
 
 #logo{
     width: 10vw;
+}
+
+nav{
+    
+    margin-left: 25vw;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    padding: 0.5vw;
+    text-decoration: none;
+    color: black;
+    margin-right: 3vw;
+    font-size: 2vw;
+    background-color: rgb(29, 155, 29);
+    border-radius: 0.5vw;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+}
+
+
+/*section*/
+section{
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+section h2{
+    border-bottom: solid 2px green;
+    padding-bottom: 0.5vw;
+    margin-right: 2vw;
+    color: rgb(0, 166, 0);
 }
