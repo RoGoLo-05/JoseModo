@@ -1,3 +1,18 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
 header{
     background-color: limegreen;
+    display: flex;
+    flex-direction: row;
+}
+
+header h1{
+    font-size: 3vw;
+}
+
+#logo{
+    width: 10vw;
 }
