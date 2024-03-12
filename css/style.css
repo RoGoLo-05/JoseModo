@@ -12,7 +12,8 @@ body{
 /*header*/
 header{
     padding: 0.6vw;
-    background-color: #453643;
+    /*background-color: #453643;*/
+    background-color: #ff00dd;
     display: flex;
     flex-direction: row;
 }
