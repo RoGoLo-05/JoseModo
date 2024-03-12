@@ -3,8 +3,9 @@
 body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #E5EBEA;
     cursor: url(../img/ballesta_cursor.png), auto;
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
 }
 
 
@@ -50,13 +51,24 @@ nav a:hover{
 }
 
 
-/*section*/
+/*section principal*/
+#principal h1{
+    font-size: 120px;
+}
+
+
+/*section informacion*/
+#informacion{
+    background-color: #E5EBEA;
+}
+
 section{
-    margin-top: 2vw;
-    margin-left: 2vw;
+    
 }
 
 section h2{
+    margin-top: 2vw;
+    margin-left: 2vw;
     font-size: 1.35vw;
     border-bottom: solid 2px #28112B;
     padding-bottom: 0.5vw;
@@ -76,6 +88,7 @@ section h2{
 }
 
 .parrafos{
+    margin-left: 2vw;
     grid-area: parrafos;
     font-size: 1.1vw;
     color: black;
