@@ -3,30 +3,33 @@
 body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: darkslategray;
+    background-color: #E5EBEA;
     cursor: url(../img/ballesta_cursor.png), auto;
 }
 
 
 /*header*/
 header{
-    background-color: limegreen;
+    padding: 0.6vw;
+    background-color: #453643;
     display: flex;
     flex-direction: row;
 }
 
 header h1{
-    margin-left: 1vw;
-    font-size: 3vw;
-    padding-top: 1vw;
+    margin-left: 2vw;
+    font-size: 1.75vw;
+    padding-top: 0.2vw;
+    color: white;
 }
 
 #logo{
-    width: 10vw;
+    margin-left: 1vw;
+    height: 5vw;
 }
 
 nav{
-    margin-left: 25vw;
+    margin-left: 40vw;
     display: flex;
     align-items: center;
 }
@@ -34,10 +37,10 @@ nav{
 nav a{
     padding: 0.5vw;
     text-decoration: none;
-    color: black;
+    color: white;
     margin-right: 3vw;
-    font-size: 2vw;
-    background-color: rgb(29, 155, 29);
+    font-size: 1.2vw;
+    background-color: #28112B;
     border-radius: 0.5vw;
     transition: transform 0.3s ease;
 }
@@ -54,11 +57,11 @@ section{
 }
 
 section h2{
-    font-size: 2vw;
-    border-bottom: solid 2px green;
+    font-size: 1.35vw;
+    border-bottom: solid 2px #28112B;
     padding-bottom: 0.5vw;
     margin-right: 2vw;
-    color: rgb(0, 166, 0);
+    color: black;
 }
 
 /*Grid del parrafo y la imagen en la vista del movil*/
@@ -74,8 +77,8 @@ section h2{
 
 .parrafos{
     grid-area: parrafos;
-    font-size: 1.5vw;
-    color: rgb(0, 166, 0);
+    font-size: 1.1vw;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
