@@ -99,8 +99,8 @@ section h2{
     display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
     grid-template-columns: 1fr; /*Como solo hay una columna, pongo 1fr. Si hubieran dos podría poner: 1fr 1fr por ejemplo*/
     grid-template-areas:
-    "parrafos"
-    "foto";
+    "izquierda"
+    "derecha";
     gap: 10px;
     max-width: 100vw;
 }
@@ -113,7 +113,7 @@ section h2{
 .parrafos{
     margin-right: 10px;
     margin-left: 10px;
-    grid-area: parrafos;
+    grid-area: izquierda;
     font-size: 12px;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -131,14 +131,14 @@ section h2{
 }
 
 .foto{
-    grid-area: foto;
+    grid-area: derecha;
 }
 
 #contenedorvideo{
     background-color: #83bdff;
-    margin-top: -50px;
-    padding-left: 10px;
     padding-right: 10px;
+    margin-top: -50px;
+    padding-bottom: 20px;
 }
 
 video{
@@ -147,6 +147,53 @@ video{
 
 #video{
     text-align: center;
+    grid-area: derecha; /*En la tablet y pc le he puesto a este izquierda y al otro derecha, osea al reves, para cambiarlo y poner el video a la izquierda, así queda mejor*/
+}
+
+#descarga{
+    grid-area: izquierda;
+}
+
+#descarga h3{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#descarga p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#boton{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+button{
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #26ff00, #ffffff);
+    cursor: pointer;
+    animation: tamanio 2s infinite;
+}
+
+button:hover {
+    animation: rotar 1s infinite linear;
+}
+
+@keyframes tamanio { /*El boton aumenta y disminuye su tamaño sin parar*/
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1) rotate(10deg); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1) rotate(-10deg); }
+    100% { transform: scale(1); }
+}
+
+@keyframes rotar { /*Rota el boton cuando tienes el raton encima de él*/
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @media only screen and (min-width: 768px) {  
@@ -154,7 +201,7 @@ video{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
         grid-template-columns: 2fr; /*Como solo hay una columna, pongo 1fr. Si hubieran dos podría poner: 1fr 1fr por ejemplo*/
         grid-template-areas:
-        "parrafos foto";
+        "izquierda derecha";
         gap: 5vw;
         max-width: 100vw;
         margin-right: 2vw;
@@ -257,7 +304,7 @@ video{
     .parrafos{
         margin-right: 3vw;
         margin-left: 10px;
-        grid-area: parrafos;
+        grid-area: izquierda;
         font-size: 14px;
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -274,16 +321,43 @@ video{
     }
     
     .foto{
-        grid-area: foto;
+        grid-area: derecha;
         text-align: center;
     }
 
     video{
         width: 40vw;
+        margin-left: 15px;
     }
 
     #video{
         text-align: center;
+        grid-area: izquierda;
+    }
+
+    #descarga{
+        grid-area: derecha;
+    }
+
+    #descarga h3{
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #descarga p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #boton{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    button{
+        font-size: 16px;
     }
 }
 
@@ -292,7 +366,7 @@ video{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
         grid-template-columns: 2fr; /*Como solo hay una columna, pongo 1fr. Si hubieran dos podría poner: 1fr 1fr por ejemplo*/
         grid-template-areas:
-        "parrafos foto";
+        "izquierda derecha";
         gap: 5vw;
         max-width: 100vw;
         margin-right: 2vw;
@@ -325,6 +399,27 @@ video{
     }
     section h2{
         font-size: 24px;
+    }
+
+    #descarga h3{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #descarga p{
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #boton{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    button{
+        font-size: 18px;
     }
 }
 
