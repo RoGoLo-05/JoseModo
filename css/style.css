@@ -8,7 +8,6 @@ body{
     background-size: cover;
 }
 
-
 /*header*/
 header {
     text-align: center;
@@ -122,6 +121,7 @@ section h2{
 
 .imagen{
     text-align: center;
+    margin-bottom: 20px
 }
 
 #mundo{
@@ -134,6 +134,16 @@ section h2{
     grid-area: foto;
 }
 
+#contenedorvideo{
+    background-color: #83bdff;
+    margin-top: -50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+video{
+    width: 400px;
+}
 
 @media only screen and (min-width: 768px) {  
     .contenedor_grid{
