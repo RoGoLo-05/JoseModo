@@ -196,6 +196,16 @@ button:hover {
     100% { transform: rotate(360deg); }
 }
 
+footer{
+    background-color: #3d6af2;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 14px;
+}
+
 @media only screen and (min-width: 768px) {  
     .contenedor_grid{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
@@ -359,6 +369,10 @@ button:hover {
     button{
         font-size: 16px;
     }
+
+    footer p{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {  
@@ -421,5 +435,6 @@ button:hover {
     button{
         font-size: 18px;
     }
+
 }
 
