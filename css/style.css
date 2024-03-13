@@ -143,6 +143,7 @@ section h2{
 
 video{
     width: 85vw;
+    border: solid 2px;
 }
 
 #video{
