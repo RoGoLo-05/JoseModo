@@ -255,6 +255,18 @@ input, textarea{
     border: solid 3px;
 }
 
+.seccion1{
+    background-color: #deedff;
+    border: #5e5e5e solid ;
+    margin-bottom: 10px;
+}
+
+.seccion2{
+    background-color: #b3d6ff;
+    border: #6289ff solid;
+    margin-bottom: 10px;
+}
+
 @media only screen and (min-width: 768px) {  
     .contenedor_grid{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
