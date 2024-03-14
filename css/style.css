@@ -216,11 +216,26 @@ footer p{
     border-radius: 2vw;
     border: solid 2px;
     outline: solid 1px blue; /*Borde exterior*/
-    margin-bottom: 16vw;
+    margin-bottom: 10vw;
 }
 
 input, textarea{
     width: 97%;
+}
+
+#botonenviar{
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00c8ff, #ffffff);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#botonenviar:hover{
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ffffff, #00c8ff);
 }
 
 @media only screen and (min-width: 768px) {  
