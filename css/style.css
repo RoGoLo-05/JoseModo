@@ -267,6 +267,26 @@ input, textarea{
     margin-bottom: 10px;
 }
 
+#dani{
+    grid-area: izquierda;
+}
+
+#rogolo{
+    grid-area: derecha;
+}
+
+#dani img, #rogolo img{
+    width: 50vw;
+    border-radius: 50%; /*El truco del almendruco, si pones que el radio del borde sea 50%, las fotos son circulares*/
+    border: 3px solid;
+}
+
+#dani, #rogolo{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 @media only screen and (min-width: 768px) {  
     .contenedor_grid{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
@@ -461,8 +481,33 @@ input, textarea{
 
     .fotos img{
         width: 25vw;
-        margin: 7px;
+        margin: 10px;
     }
+
+    #dani, #rogolo{
+        width: 20vw;
+    }
+
+    #dani img, #rogolo img{
+        width: 30vw;
+        border-radius: 50%; /*El truco del almendruco, si pones que el radio del borde sea 50%, las fotos son circulares*/
+        border: 3px solid;
+    }
+
+    #dani{
+        margin-left: 10vw;
+        width: 35vw;
+    }
+
+    #rogolo{
+        margin-right: 10vw;
+        width: 35vw;
+    }
+
+    #dani, #rogolo{
+        text-align: center;
+    }
+    
 }
 
 @media only screen and (min-width: 1024px) {  
@@ -535,6 +580,31 @@ input, textarea{
     input, textarea{
         width: 97%;
     }
+
+    #dani, #rogolo{
+        width: 20vw;
+    }
+
+    #dani img, #rogolo img{
+        width: 25vw;
+        border-radius: 50%; /*El truco del almendruco, si pones que el radio del borde sea 50%, las fotos son circulares*/
+        border: 3px solid;
+    }
+
+    #dani{
+        margin-left: 10vw;
+        width: 35vw;
+    }
+
+    #rogolo{
+        margin-right: 10vw;
+        width: 35vw;
+    }
+
+    #dani, #rogolo{
+        text-align: center;
+    }
+    
 
 }
 
