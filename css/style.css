@@ -296,6 +296,10 @@ input, textarea{
     width: 30vw;
 }
 
+.enlace{
+    color: white;
+}
+
 @media only screen and (min-width: 768px) {  
     .contenedor_grid{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
