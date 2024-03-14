@@ -248,7 +248,7 @@ input, textarea{
     align-items: center;
 }
 
-.fotos img{
+.fotos .imagenguia{
     width: 60vw;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -285,6 +285,12 @@ input, textarea{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.fotos .contenido{
+    width: 60vw;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {  
@@ -479,9 +485,15 @@ input, textarea{
         align-items: center;
     }
 
-    .fotos img{
+    .fotos .imagenguia{
         width: 25vw;
         margin: 10px;
+    }
+
+    .fotos .contenido{
+        width: 25vw;
+        margin-bottom: 15px;
+        text-align: center;
     }
 
     #dani, #rogolo{
