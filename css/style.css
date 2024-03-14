@@ -288,9 +288,12 @@ input, textarea{
 }
 
 .fotos .contenido{
-    width: 60vw;
-    margin-bottom: 15px;
+    width: 70vw;
+    margin-bottom: 30px;
     text-align: center;
+}
+.fotos .imagenhistoria{
+    width: 30vw;
 }
 
 @media only screen and (min-width: 768px) {  
@@ -492,8 +495,11 @@ input, textarea{
 
     .fotos .contenido{
         width: 25vw;
-        margin-bottom: 15px;
+        margin: 20px;
         text-align: center;
+    }
+    .fotos .imagenhistoria{
+        width: 20vw;
     }
 
     #dani, #rogolo{
