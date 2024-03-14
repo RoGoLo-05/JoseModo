@@ -80,12 +80,13 @@ nav a:hover {
 /*section informacion*/
 #informacion{
     background-color: #E5EBEA;
+    padding-top: 5px;
 }
 
 
 section h2{
-    padding-top: 25px;
-    margin-top: 50px;
+    padding-top: 20px;
+    margin-top: 30px;
     margin-left: 10px;
     font-size: 20px;
     border-bottom: solid 2px #28112B;
@@ -125,7 +126,7 @@ span{
 
 .imagen{
     text-align: center;
-    margin-bottom: 20px
+    margin-bottom: 50px;
 }
 
 #mundo{
@@ -241,6 +242,19 @@ input, textarea{
     background: linear-gradient(45deg, #ffffff, #00c8ff);
 }
 
+.fotos{ /*Fotos de la guía, otra forma de ponerlas bien sin el grid, con el flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotos img{
+    width: 60vw;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: solid 3px;
+}
+
 @media only screen and (min-width: 768px) {  
     .contenedor_grid{
         display: grid; /*Utilizo el display:grid para establecer que va a haber grid ahí*/
@@ -325,12 +339,13 @@ input, textarea{
         background-color: #E5EBEA;
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 5px;
     }
     
 
     section h2{
         padding-top: 25px;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 10px;
         font-size: 20px;
         border-bottom: solid 2px #28112B;
@@ -422,6 +437,19 @@ input, textarea{
     
     input, textarea{
         width: 97%;
+    }
+
+    .fotos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotos img{
+        width: 25vw;
+        margin: 7px;
     }
 }
 
