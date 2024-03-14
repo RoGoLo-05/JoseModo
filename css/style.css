@@ -152,17 +152,16 @@ video{
 }
 
 #descarga{
+    text-align: center;
     grid-area: izquierda;
 }
 
 #descarga h3{
     font-size: 14px;
-    margin-left: 10px;
 }
 
 #descarga p{
     font-size: 12px;
-    margin-left: 10px;
 }
 
 #boton{
@@ -418,14 +417,10 @@ footer p{
 
     #descarga h3{
         font-size: 18px;
-        margin-left: 10px;
-        margin-right: 10px;
     }
     
     #descarga p{
         font-size: 16px;
-        margin-left: 10px;
-        margin-right: 10px;
     }
     
     #boton{
