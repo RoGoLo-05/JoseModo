@@ -66,7 +66,6 @@ nav a:hover {
 #principal h1{
     font-size: 50px;
     margin-top: 75px; 
-    
 }
 
 #principal p{
@@ -93,6 +92,10 @@ section h2{
     padding-bottom: 5px;
     margin-right: 10px;
     color: black;
+}
+
+span{
+    font-weight: bold;
 }
 
 /*Grid del parrafo y la imagen en la vista del movil*/
@@ -319,7 +322,7 @@ input, textarea{
     
     /*section informacion*/
     #informacion{
-        background-color: #ffffff;
+        background-color: #E5EBEA;
         padding-left: 10px;
         padding-right: 10px;
     }
