@@ -6,6 +6,7 @@ body{
     cursor: url(../img/ballesta_cursor.png), auto;
     background-image: url(../img/fondo1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*header*/
@@ -169,7 +170,7 @@ video{
     margin-bottom: 50px;
 }
 
-button{
+#botondescargar{
     font-size: 14px;
     padding: 10px;
     margin-top: 15px;
@@ -179,7 +180,7 @@ button{
     animation: tamanio 2s infinite;
 }
 
-button:hover {
+#botondescargar:hover {
     animation: rotar 1s infinite linear;
 }
 
@@ -204,6 +205,22 @@ footer{
 
 footer p{
     font-size: 14px;
+}
+
+#formulario{
+    margin-top: 50px;
+    padding: 10px;
+    background: radial-gradient(circle, #ffffff, #4ba2ff);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 2vw;
+    border: solid 2px;
+    outline: solid 1px blue; /*Borde exterior*/
+    margin-bottom: 16vw;
+}
+
+input, textarea{
+    width: 97%;
 }
 
 @media only screen and (min-width: 768px) {  
@@ -366,12 +383,27 @@ footer p{
         margin-bottom: 50px;
     }
     
-    button{
+    #botondescargar{
         font-size: 16px;
     }
 
     footer p{
         font-size: 16px;
+    }
+
+    #formulario{
+        margin-top: 100px;
+        padding: 15px;
+        background: radial-gradient(circle, #ffffff, #4ba2ff);
+        margin-left: 20vw;
+        margin-right: 20vw;
+        border-radius: 2vw;
+        border: solid 2px;
+        outline: solid 1px blue; /*Borde exterior*/
+    }
+    
+    input, textarea{
+        width: 97%;
     }
 }
 
@@ -427,9 +459,23 @@ footer p{
         text-align: center;
         margin-bottom: 50px;
     }
-    
-    button{
+    #botondescargar{
         font-size: 18px;
+    }
+
+    #formulario{
+        margin-top: 150px;
+        padding: 20px;
+        background: radial-gradient(circle, #ffffff, #4ba2ff);
+        margin-left: 30vw;
+        margin-right: 30vw;
+        border-radius: 2vw;
+        border: solid 2px;
+        outline: solid 1px blue; /*Borde exterior*/
+    }
+    
+    input, textarea{
+        width: 97%;
     }
 
 }
